@@ -3,11 +3,10 @@
     package="com.toddaton.criminalintent"
     android:versionCode="1"
     android:versionName="1.0" >
-
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="18" />
-
+        android:targetSdkVersion="18" >
+    </uses-sdk>
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -16,12 +15,14 @@
         <activity
             android:name="com.toddaton.criminalintent.CrimeActivity"
             android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.toddaton.criminalintent.CrimeListActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        </application>
 
 </manifest>
